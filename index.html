@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ismail Asselay — Information Systems · AI & Automation</title>
+<meta name="description" content="Portfolio of Ismail Asselay, Information Systems student at SDU. AI, computer vision and automation projects.">
+<meta property="og:title" content="Ismail Asselay — Portfolio">
+<meta property="og:description" content="Information Systems student at SDU building AI and automation projects.">
+<meta property="og:image" content="assets/photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+</div>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Main">
+    <a href="#top" class="logo">ia<span>.</span></a>
+    <div class="links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="pill">Say hi</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow reveal"><span class="dot"></span> Information Systems · SDU · Kazakhstan</p>
+      <h1 class="reveal">Hi, I'm <span class="grad">Ismail</span>.<br>I turn ideas into <span class="underline">smart tools</span>.</h1>
+      <p class="lead reveal">Second-year student exploring AI, computer vision and automation. I like building things that actually run — from Telegram bots to real-time emotion detection.</p>
+      <div class="cta reveal">
+        <a class="btn primary" href="#projects">See my work <span>→</span></a>
+        <a class="btn ghost" href="https://github.com/ismailaselaii-create" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="arch">
+        <img src="assets/photo.jpg" alt="Portrait of Ismail Asselay" width="900" height="1350">
+      </div>
+      <span class="chip c1" data-depth="18">🤖 AI × Automation</span>
+      <span class="chip c2" data-depth="-14">👁️ Computer Vision</span>
+      <span class="chip c3" data-depth="22">🐍 Python</span>
+      <span class="chip c4" data-depth="-20">GPA 3.6</span>
+      <svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Python</span><span>Java</span><span>SQL</span><span>OpenCV</span><span>PostgreSQL</span><span>n8n</span><span>Git</span><span>LLM APIs</span><span>HTML/CSS</span><span>JavaScript</span>
+      <span>Python</span><span>Java</span><span>SQL</span><span>OpenCV</span><span>PostgreSQL</span><span>n8n</span><span>Git</span><span>LLM APIs</span><span>HTML/CSS</span><span>JavaScript</span>
+    </div>
+  </div>
+
+  <section id="projects" class="section">
+    <div class="sec-head reveal">
+      <p class="label">01 — Selected projects</p>
+      <h2>Things I've built</h2>
+    </div>
+
+    <div class="projects">
+      <article class="card project tilt reveal">
+        <div class="visual v-fin" aria-hidden="true">
+          <div class="chat">
+            <div class="msg me">spent 3500 on food</div>
+            <div class="msg bot">✅ Expense · Food · 3,500 ₸</div>
+            <div class="msg me">got salary 100000</div>
+            <div class="msg bot">✅ Income · Salary · 100,000 ₸</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="tags"><span>n8n</span><span>PostgreSQL</span><span>Groq · Llama 3.3 70B</span><span>Telegram Bot API</span></div>
+          <h3>AI Finance Tracker</h3>
+          <p>A Telegram bot that tracks income and expenses from plain text. AI extracts amount, type, category and date as JSON. Includes balance, history with filters, spending stats with AI insights, and monthly budgets per category. Data is isolated per user by chat ID.</p>
+          <ul class="mini">
+            <li><code>/balance</code> monthly income, expenses, net</li>
+            <li><code>/stats</code> category breakdown + AI insights</li>
+            <li><code>/budget food 20000</code> limits per category</li>
+          </ul>
+          <a class="link" href="https://github.com/ismailaselaii-create/ai-finance-tracker" target="_blank" rel="noopener">View on GitHub <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card project tilt reveal">
+        <div class="visual v-emo" aria-hidden="true">
+          <div class="face"><span class="box"></span><em>happy</em></div>
+          <div class="bars">
+            <i style="--w:82%"><b>happy</b></i>
+            <i style="--w:34%"><b>neutral</b></i>
+            <i style="--w:18%"><b>surprise</b></i>
+            <i style="--w:9%"><b>sad</b></i>
+            <i style="--w:6%"><b>fear</b></i>
+          </div>
+        </div>
+        <div class="body">
+          <div class="tags"><span>Python</span><span>OpenCV</span><span>FER (CNN)</span><span>scikit-learn</span></div>
+          <h3>Facial Emotion Recognition</h3>
+          <p>Real-time and batch emotion analysis from webcam or images. Detects seven emotions with Haar cascade face detection (four tunable configs) and a CNN trained on FER-2013. Batch mode computes accuracy and a confusion matrix on a labelled dataset.</p>
+          <ul class="mini">
+            <li>Live bounding box, label and emotion bar chart</li>
+            <li>Frame skipping, screenshots, config switching</li>
+            <li>Exports <code>results.csv</code> + confusion matrix</li>
+          </ul>
+          <a class="link" href="https://github.com/ismailaselaii-create/facial-emotion-recognition" target="_blank" rel="noopener">View on GitHub <span>↗</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="sec-head reveal">
+      <p class="label">02 — About me</p>
+      <h2>A bit about me</h2>
+    </div>
+    <div class="bento">
+      <div class="card b-text reveal">
+        <p>I'm a second-year Information Systems student at Suleyman Demirel University. I enjoy the point where data, AI and software meet — building small, working systems and learning by shipping them.</p>
+        <p>Right now I'm digging into machine learning, LLM integrations and workflow automation, and I'm looking for opportunities to grow through internships and team projects.</p>
+      </div>
+      <div class="card b-stat reveal"><strong data-count="3.6" data-dec="1">0</strong><span>GPA</span></div>
+      <div class="card b-stat alt reveal"><strong data-count="2">0</strong><span>Year at SDU</span></div>
+      <div class="card b-stat mint reveal"><strong data-count="7">0</strong><span>Emotions detected in my CV project</span></div>
+      <div class="card b-list reveal">
+        <h4>Currently exploring</h4>
+        <ul>
+          <li>Machine learning fundamentals</li>
+          <li>LLM integration & prompt design</li>
+          <li>Computer vision with OpenCV</li>
+          <li>No-code / low-code automation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="toolkit" class="section">
+    <div class="sec-head reveal">
+      <p class="label">03 — Toolkit</p>
+      <h2>What I work with</h2>
+    </div>
+    <div class="toolkit">
+      <div class="card reveal"><h4>Programming &amp; CS</h4><div class="chips"><span>Python</span><span>Java</span><span>OOP</span><span>Data structures</span><span>Algorithms</span><span>SQL</span></div></div>
+      <div class="card reveal"><h4>Data &amp; AI</h4><div class="chips"><span>pandas</span><span>NumPy</span><span>Matplotlib</span><span>scikit-learn</span><span>OpenCV</span><span>LLM APIs</span><span>Prompt engineering</span></div></div>
+      <div class="card reveal"><h4>Web &amp; tools</h4><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git / GitHub</span><span>Vercel</span><span>REST APIs</span></div></div>
+      <div class="card reveal"><h4>Automation &amp; backend</h4><div class="chips"><span>n8n</span><span>PostgreSQL</span><span>Telegram Bot API</span><span>Webhooks</span></div></div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="sec-head reveal">
+      <p class="label">04 — Education</p>
+      <h2>Where I study</h2>
+    </div>
+    <div class="card edu reveal">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <h3>Suleyman Demirel University (SDU)</h3>
+        <p>B.Sc. Information Systems · Year 2</p>
+      </div>
+      <div class="edu-gpa"><strong>3.6</strong><span>GPA</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="card cta-card reveal">
+      <p class="label">05 — Contact</p>
+      <h2>Let's build something <span class="grad">together</span>.</h2>
+      <p>Open to internships, collaborations and interesting projects. The fastest way to reach me is email or Telegram.</p>
+      <a class="btn primary big" href="mailto:ismailaselaii@gmail.com">ismailaselaii@gmail.com</a>
+      <div class="socials">
+        <a href="https://github.com/ismailaselaii-create" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/ds-аселай-исмаил-a8b63b407/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://t.me/ismai1ovaas" target="_blank" rel="noopener">Telegram ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="yr">2026</span> Ismail Asselay</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
